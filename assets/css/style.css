@@ -53,28 +53,19 @@ body::after {
   height: 100vh;
   top: 0;
   pointer-events: none;
-  z-index: 0;
-  opacity: 0.5;
+  z-index: 9999;
+  opacity: 0.4;
+  mix-blend-mode: screen;
 }
 
 body::before {
   left: -200px;
-  background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
 }
 
 body::after {
   right: -200px;
-  background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.12) 0%, transparent 70%);
-}
-
-.navbar,
-.hero,
-.section,
-.cta-section,
-.page-header,
-.footer {
-  position: relative;
-  z-index: 1;
+  background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
 }
 
 a {
