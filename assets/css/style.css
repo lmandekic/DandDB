@@ -300,6 +300,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
   max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-badge {
@@ -351,12 +353,15 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--gray-400);
   margin-bottom: 36px;
   max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-buttons {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-stats {
@@ -365,6 +370,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 60px;
   padding-top: 40px;
   border-top: 1px solid var(--dark-border);
+  justify-content: center;
 }
 
 .hero-stat h3 {
