@@ -134,26 +134,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------- Cursor glow effect ---------- */
-  const glow = document.createElement('div');
-  glow.classList.add('cursor-glow');
-  document.body.appendChild(glow);
 
-  let glowX = 0, glowY = 0, currentX = 0, currentY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    glowX = e.clientX;
-    glowY = e.clientY + window.scrollY;
-  });
-
-  function animateGlow() {
-    currentX += (glowX - currentX) * 0.15;
-    currentY += (glowY - currentY) * 0.15;
-    glow.style.transform = `translate(${currentX - 250}px, ${currentY - 250}px)`;
-    requestAnimationFrame(animateGlow);
-  }
-  animateGlow();
-
-  document.addEventListener('mouseleave', () => { glow.style.opacity = '0'; });
-  document.addEventListener('mouseenter', () => { glow.style.opacity = '1'; });
 });
