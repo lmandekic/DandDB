@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ddb-site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3000", "/Users/lmandekic/WEB stranice/D&DB "],
+      "port": 3000
+    }
+  ]
+}
